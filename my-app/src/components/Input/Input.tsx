@@ -19,7 +19,7 @@ function InputCity(props:fetchesProps){
   }
 
 
-  return(<div>
+  return(<div id="form">
     <form>
       <label>Search Cities:<input type="text" placeholder="Enter city name..." onChange={e=>handleChange(e.target.value)}></input></label>
       <button onClick={handleSubmit}>Submit</button>

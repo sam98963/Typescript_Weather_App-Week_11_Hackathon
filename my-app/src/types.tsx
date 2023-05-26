@@ -66,26 +66,26 @@ export enum Pod {
     N = "n",
 }
 
-export interface Weather {
+export type Weather = {
     id:          number;
-    main:        MainEnum;
-    description: Description;
+    main:        DescriptionMain;
+    description: string;
     icon:        string;
 }
 
-export enum Description {
-    BrokenClouds = "broken clouds",
-    ClearSky = "clear sky",
-    FewClouds = "few clouds",
-    LightRain = "light rain",
-    OvercastClouds = "overcast clouds",
-    ScatteredClouds = "scattered clouds",
+export type Description = {
+    BrokenClouds: string,
+    ClearSky: string,
+    FewClouds: string,
+    LightRain: string,
+    OvercastClouds: string,
+    ScatteredClouds: string,
 }
 
-export enum MainEnum {
-    Clear = "Clear",
-    Clouds = "Clouds",
-    Rain = "Rain",
+export type DescriptionMain = {
+    Clear: string,
+    Clouds: string,
+    Rain: string,
 }
 
 export interface Wind {

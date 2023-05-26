@@ -7,7 +7,7 @@ import {List} from "../types"
 
 function App() {
 
-  const [weather, setweather] = React.useState<null|List>(null)
+  const [weather, setweather] = React.useState<null|[List]>(null)
 
   async function fetches(city:string) {
 
