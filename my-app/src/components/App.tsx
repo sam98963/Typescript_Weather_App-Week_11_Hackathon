@@ -1,15 +1,15 @@
 import React from 'react';
 import './App.css';
+import InputCity from './Input/Input';
 
 function App() {
 
 
-  async function Fetches(city:string) {
+  async function fetches(city:string) {
 
       const responseCords = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=9dd8de3ac20f8bb961cdab75750a3b62`)
 
       const dataCords = await responseCords.json()
-      console.log(dataCords)
       let lon= dataCords[0].lon
       let lat = dataCords[0].lat
       let cnt=1
@@ -26,15 +26,12 @@ function App() {
   }
 
 
-   
-
-    Fetches("london")
 
 
 
   return (
     <div className="App">
-   
+   <InputCity fetches={fetches}/>
     </div>
   );
 }
