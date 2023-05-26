@@ -15,7 +15,6 @@ function InputCity(props:fetchesProps){
  
   function handleSubmit(event: React.MouseEvent<HTMLButtonElement>){
     event.preventDefault()
-    console.log("search")
     fetches(inputText)
   }
 
