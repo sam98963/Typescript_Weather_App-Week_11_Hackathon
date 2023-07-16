@@ -16,7 +16,7 @@ This was a task assigned to us to consolidate the two days we spent on typescrip
 - CSS
 
 ### Improvements
-I intend to change the styling over the next couple of days as well as elaborate on the functionality, such as adding a weather image or changing bg based on a particular weather etc...
+- I intend to change the styling over the next couple of days as well as elaborate on the functionality, such as adding a weather image or changing bg based on a particular weather etc...
+**- Will also need to check api requests are working properly, current errors in deployment.**
 
 ### Usage
-
